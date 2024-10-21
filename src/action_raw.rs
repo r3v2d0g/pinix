@@ -113,6 +113,7 @@ impl<'a> TryFrom<RawAction<'a>> for Action<'a> {
                     ActionType::QueryPathInfo => StartFields::QueryPathInfo,
                     ActionType::PostBuildHook => StartFields::PostBuildHook,
                     ActionType::BuildWaiting => StartFields::BuildWaiting,
+                    ActionType::FetchTree => StartFields::FetchTree,
                 };
 
                 Action::Start {

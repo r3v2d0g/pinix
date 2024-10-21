@@ -29,6 +29,7 @@ pub enum ActionType {
     QueryPathInfo = 109,
     PostBuildHook = 110,
     BuildWaiting = 111,
+    FetchTree = 112,
 }
 
 impl Default for ActionType {
@@ -103,6 +104,7 @@ pub enum StartFields<'a> {
     QueryPathInfo,
     PostBuildHook,
     BuildWaiting,
+    FetchTree,
 }
 
 #[derive(Debug, Eq, PartialEq)]
